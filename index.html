@@ -16,20 +16,21 @@
             height: 100vh;
         }
         .iframe-container {
-            position: absolute;
-            top: -150px; /* 调整这个值来隐藏iframe顶部的部分 */
-            left: 0;
             width: 100%;
-            height: calc(100% + 150px); /* 调整这个值来匹配top的调整 */
+            height: 100%;
             border: none;
-            transform: scale(1.5); /* 调整缩放比例 */
-            transform-origin: top left; /* 确保从左上角开始缩放 */
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <iframe src="https://websim.ai/c/VuI0g2qEtDikaMwJM" class="iframe-container" title="山外计算器"></iframe>
+        <iframe src="https://websim.ai/c/VuI0g2qEtDikaMwJM" class="iframe-container" id="iframe" title="山外计算器" onload="scrollIframe()"></iframe>
     </div>
+    <script>
+        function scrollIframe() {
+            const iframe = document.getElementById('iframe');
+            iframe.contentWindow.scrollTo(0, 100); // 调整100为你希望滚动的像素值
+        }
+    </script>
 </body>
 </html>
