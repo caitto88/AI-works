@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     text-align: center;
     margin: 0;
     padding: 0;
@@ -17,6 +19,7 @@ body {
 
 h1, h2 {
     color: #fff; /* 白色文字 */
+    font-weight: 700; /* 加粗 */
 }
 
 label {
@@ -31,6 +34,7 @@ input[type="number"] {
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    font-size: 1em; /* 字体大小 */
 }
 
 .buttons {
